@@ -3,5 +3,6 @@ fun main() {
     val clyde = Cat("Clyde", 5, 5)
 
     println(binnie)
-    println(clyde)
+    binnie.eat()
+
 }
