@@ -10,9 +10,16 @@ class Cat (private val name: String, private var age: Int, weightIn: Int) {
         weight = weightIn
     }
 
+    public fun walk(distance: Int) : Boolean {
+        if(weight - distance >= 5) {
+            weight -= distance
+            return true
+        }
+        return false
+    }
 
 
-    override fun toString() : String {
+    public override fun toString() : String {
         return "Name: $name Age: $age Weight: $weight"
     }
 }
